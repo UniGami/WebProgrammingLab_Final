@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1087 - Grocery Order</title>
+    <link rel="stylesheet" href="Q3style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Grocery Order Form</h2>
+        <form id="orderForm">
+            <!-- Customer Details -->
+            <label>Customer Name</label>
+            <div id="name">
+                <input type="text" id="Firstname" placeholder="First Name" required>
+                <div id="spacer"></div>
+                <input type="text" id="Lastname" placeholder="Last Name" required>
+            </div>
+
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter phone number" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <!-- Product List -->
+            <h3>Products</h3>
+
+            <div class="product">
+                <input type="checkbox" class="item" value="Apple" data-price="10">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Apple">
+                <span>Apple - $10/kg</span>
+                <input type="number" class="qty" min="1" max="10" placeholder="Qty">
+            </div>
+
+            <div class="product">
+                <input type="checkbox" class="item" value="Banana" data-price="5">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Banana">
+                <span>Banana - $5/kg</span>
+                <input type="number" class="qty" min="1" max="10" placeholder="Qty">
+            </div>
+
+            <div class="product">
+                <input type="checkbox" class="item" value="Avocado" data-price="7">
+                <img src="https://media.istockphoto.com/id/1156379587/photo/avocado-on-a-white-background.jpg?s=612x612&w=0&k=20&c=eBwzs88iYCGY5_Ksi7CAxugQ3rbSeUJGtkxPVTEXqos=" alt="Avocado">
+                <span>Avocado - $7/kg</span>
+                <input type="number" class="qty" min="1" max="10" placeholder="Qty">
+            </div>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+    <script src="Q3_script.js"></script>
+</body>
+</html>

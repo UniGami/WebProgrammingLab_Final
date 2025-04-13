@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23BCE1402</title>
+    <style>
+        #controlPanel {
+            display: flex;
+            justify-content: space-around;
+            margin: 15px 0;
+        }
+        #contentArea {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="controlPanel">
+        <button type="button" onclick="sortDescending()">Sort in Reverse</button>
+        <button type="button" onclick="searchRecord()">Lookup Record</button>
+        <button type="button" onclick="filterRange()">Filter by Range</button>
+    </div>
+    <div id="contentArea"></div>
+    <script src="Q1j.js" defer></script>
+</body>
+</html>
